@@ -2,9 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Readex+Pro&display=swap');
 
 /* --Main-- */
+html,
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--white);
+    height: 100%;
 }
 
 * {
@@ -37,6 +39,7 @@ header {
 
 .iconimg {
     max-width: 50px;
+    border-radius: 5px;
 }
 
 nav {
@@ -93,6 +96,60 @@ nav {
     background-color: rgba(127, 85, 57, 0.8);
 }
 
+/* Dropdown Button */
+.fas {
+    margin-left: 7px;
+    transition: transform .3s ease-in-out;
+}
+
+.dropbtn:hover > .fas {    
+    transform: rotate(180deg);
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background: none;
+    color: var(--white);
+    padding: 0px 20px;
+    font-size: 17px;
+    border: none;
+    transition: all 0.3s ease 0s;
+}
+
+.dropbtn:hover {
+    color: var(--color3)
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--grey);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: var(--white);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease 0s;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {color: var(--color3)}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
 /* --Mobile Nav-- */
 .menu {
     display: none;
@@ -142,6 +199,55 @@ nav {
     color: var(--white);
 }
 
+/* --Splash Page-- */
+.splashPage {
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url("../Images/alain-BqkbDOVoiyk-unsplash.jpg");
+    height: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 1%;
+    box-shadow: 0px 1px 10px 0 rgb(0 0 0 / 70%), 0 6px 30px 0 rgb(0 0 0 / 19%);
+}
+
+.splashPage a {
+    font-size: 100px;
+    color: var(--white);
+    background: none;
+    font-weight: 500;
+    cursor: text;
+    transition: color 0.5s ease 0s;
+}
+
+.splashPage a:hover {
+    color: var(--color3)
+}
+
+/* --Main-- */
+.wrapper {
+    height: auto;
+    background: red;
+}
+
+/* --Responsive-- */
+/* Nav Bar */
+@media only screen and (max-width: 800px) {
+    .nav__links,
+    .cta {
+        display: none;
+    }
+
+    .menu {
+        display: initial;
+    }
+}
+
 @media screen and (max-height: 450px) {
     .overlay a {
         font-size: 20px;
@@ -151,16 +257,5 @@ nav {
         font-size: 40px;
         top: 15px;
         right: 35px;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    .nav__links,
-    .cta {
-        display: none;
-    }
-
-    .menu {
-        display: initial;
     }
 }

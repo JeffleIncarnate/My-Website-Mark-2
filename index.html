@@ -4,19 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dhruv's Website | Home</title>
+    <title>Dhruv Rayat | Home</title>
     <link rel="stylesheet" href="CSS/index.css">
     <script src="https://kit.fontawesome.com/866b8b01f2.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!--Nav Bar-->
     <header>
-        <a class="logo" href="/"><img class="iconimg"src="Images/Profile-Picture.png" alt="logo"></a>
+        <a class="logo" href="/"><img class="iconimg" src="Images/Profile-Picture.png" alt="logo"></a>
         <nav>
             <ul class="nav__links">
-                <li><a href="#">Games <i class="fas fa-angle-down"></i></a></li>
-                <li><a href="#">Code <i class="fas fa-angle-down"></i></i></a></li>
-                <li><a href="#">About </a></li>
+                <li><a href="#Games">Games</a></li>
+                <li><a href="#">Websites</a></li>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Code<i class="fas fa-angle-up"></i></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Python</a>
+                        <a href="#">C#</a>
+                        <a href="#">HTML</a>
+                    </div>
+                </div>
+                <li><a href="#">About</a></li>
             </ul>
         </nav>
         <a class="cta" href="#">Contact</a>
@@ -32,6 +40,19 @@
             <a href="#">About</a>
         </div>
     </div>
+
+    <!--Header-->
+    <div class="splashPage">
+        <a>Dhruv Rayat</a>
+    </div>
+
+    <!--Main-->
+    <main class="wrapper">
+        <!--Games-->
+        <div id="Games">
+            <h2>Games</h2>
+        </div>
+    </main>
 
     <!--Scripts-->
     <script type="text/javascript" src="JS/mobile.js"></script>
