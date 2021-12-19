@@ -4,6 +4,7 @@
 /* --Main-- */
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: var(--white);
 }
 
 * {
@@ -13,7 +14,7 @@ body {
 }
 
 :root {
-    --white: #ede0d4;
+    --white: #edf0f1;
     --color2: #b08968;
     --color3: #7f5539;
     --grey: #24252a;
@@ -73,6 +74,10 @@ nav {
     color: var(--color3)
 }
 
+.nav__links li a:hover i {
+    transform: rotate(360deg);
+}
+
 .cta {
     order: 2;
     margin-left: 20px;
@@ -85,7 +90,7 @@ nav {
 }
 
 .cta:hover {
-    background-color: rgba(0, 136, 169, 0.8);
+    background-color: rgba(127, 85, 57, 0.8);
 }
 
 /* --Mobile Nav-- */
@@ -100,7 +105,7 @@ nav {
     z-index: 1;
     left: 0;
     top: 0;
-    background-color: #24252a;
+    background-color: var(--grey);
     overflow-x: hidden;
     transition: all 0.5s ease 0s;
 }
@@ -126,7 +131,7 @@ nav {
 
 .overlay a:hover,
 .overlay a:focus {
-    color: #0088a9;
+    color: var(--color3);
 }
 
 .overlay .close {
@@ -134,7 +139,7 @@ nav {
     top: 20px;
     right: 45px;
     font-size: 60px;
-    color: #edf0f1;
+    color: var(--white);
 }
 
 @media screen and (max-height: 450px) {
