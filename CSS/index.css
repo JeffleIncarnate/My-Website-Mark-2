@@ -1,278 +1,311 @@
 /* --Font-- */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Readex+Pro&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Readex+Pro&display=swap");
 
 /* --Main-- */
 html,
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--white);
-    height: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--white);
+  height: 100%;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-    --white: #edf0f1;
-    --color2: #b08968;
-    --color3: #7f5539;
-    --grey: #24252a;
+  --white: #edf0f1;
+  --color2: #b08968;
+  --color3: #7f5539;
+  --grey: #24252a;
 }
 
 /* --Nav Bar-- */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
-    background-color: var(--grey);
-    box-shadow: 0px 1px 10px 0 rgb(0 0 0 / 70%), 0 6px 30px 0 rgb(0 0 0 / 19%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: var(--grey);
+  box-shadow: 0px 1px 10px 0 rgb(0 0 0 / 70%), 0 6px 30px 0 rgb(0 0 0 / 19%);
 }
 
 .logo {
-    margin-right: auto;
+  margin-right: auto;
 }
 
 .iconimg {
-    max-width: 50px;
-    border-radius: 5px;
+  max-width: 50px;
+  border-radius: 5px;
 }
 
 .social__links {
-    font-size: 25px;
-    display: flex;
+  font-size: 25px;
+  display: flex;
 }
 
 .social__links1 {
-    margin-left: 50px;
+  margin-left: 50px;
 }
 
 .nav__links {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 .nav__links a,
 .cta,
 .overlay__content a {
-    font-weight: 500;
-    color: var(--white);
-    text-decoration: none;
+  font-weight: 500;
+  color: var(--white);
+  text-decoration: none;
 }
 
 .nav__links li {
-    padding: 0px 20px;
+  padding: 0px 20px;
 }
 
 .nav__links li a {
-    transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .nav__links li a:hover {
-    color: var(--color3);
+  color: var(--color3);
 }
 
 .cta {
-    margin-left: 20px;
-    padding: 9px 25px;
-    background-color: var(--color3);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: var(--color3);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
 }
 
 .cta:hover {
-    background-color: rgba(127, 85, 57, 0.8);
+  background-color: rgba(127, 85, 57, 0.8);
 }
 
 /* Dropdown Button */
 .fas {
-    margin-left: 7px;
-    transition: transform .3s ease-in-out;
+  margin-left: 7px;
+  transition: transform 0.3s ease-in-out;
 }
 
-.dropbtn:hover > .fas {    
-    transform: rotate(180deg);
+.dropbtn:hover > .fas {
+  transform: rotate(180deg);
 }
 
 /* Dropdown Button */
 .dropbtn {
-    background: none;
-    color: var(--white);
-    padding: 0px 20px;
-    font-size: 17px;
-    border: none;
-    transition: all 0.3s ease 0s;
+  background: none;
+  color: var(--white);
+  padding: 0px 20px;
+  font-size: 17px;
+  border: none;
+  transition: all 0.3s ease 0s;
 }
 
 .dropbtn:hover {
-    color: var(--color3)
+  color: var(--color3);
 }
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: var(--grey);
-    min-width: 160px;
-    box-shadow: 0px 1px 10px 0 rgb(0 0 0 / 70%), 0 6px 30px 0 rgb(0 0 0 / 19%);
-    z-index: 1;
+  display: none;
+  position: absolute;
+  background-color: var(--grey);
+  min-width: 160px;
+  box-shadow: 0px 1px 10px 0 rgb(0 0 0 / 70%), 0 6px 30px 0 rgb(0 0 0 / 19%);
+  z-index: 1;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-    color: var(--white);
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    transition: all 0.3s ease 0s;
+  color: var(--white);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s ease 0s;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {color: var(--color3)}
+.dropdown-content a:hover {
+  color: var(--color3);
+}
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 /* --Mobile Nav-- */
 .menu {
-    display: none;
+  display: none;
 }
 
 .overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    background-color: var(--grey);
-    overflow-x: hidden;
-    transition: all 0.5s ease 0s;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: var(--grey);
+  overflow-x: hidden;
+  transition: all 0.5s ease 0s;
 }
 
 .overlay--active {
-    width: 100%;
+  width: 100%;
 }
 
 .overlay__content {
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .overlay a {
-    padding: 15px;
-    font-size: 36px;
-    display: block;
-    transition: all 0.3s ease 0s;
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: all 0.3s ease 0s;
 }
 
 .overlay a:hover,
 .overlay a:focus {
-    color: var(--color3);
+  color: var(--color3);
 }
 
 .overlay .close {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-    color: var(--white);
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: var(--white);
 }
 
 /* --Splash Page-- */
 .splashPage {
-    height: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
     url("../Images/samuel-ferrara-1527pjeb6jg-unsplash.jpg");
-    height: 84vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 20px;
-    margin: 1%;
-    box-shadow: 0px 1px 10px 0 rgb(0 0 0 / 70%), 0 6px 30px 0 rgb(0 0 0 / 19%);
-
+  height: 84vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 20px;
+  margin: 1%;
+  box-shadow: 0px 1px 10px 0 rgb(0 0 0 / 70%), 0 6px 30px 0 rgb(0 0 0 / 19%);
 }
 
 @keyframes pulse {
-    0%,
-    100% {
-      transform: scale(var(--scale, 1));
-      animation-timing-function: ease-in;
-    }
-    90% {
-        transition: scale(var(--scale, 1.001));
-    }
-    50% {
-        transform: scale(var(--scale, 1.02));
-    }
-    40% {
-        transform: scale(var(--scale, 1.01789))
-    }
+  0%,
+  100% {
+    transform: scale(1);
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transition: scale(1.001);
+  }
+  50% {
+    transform: scale(1.01);
+  }
+  40% {
+    transform: scale(1.00789);
+  }
 }
 
 .splashPage > img {
-    max-width: 50%;
-    border-radius: 10%;
-    box-shadow: 0px 1px 10px 0 rgb(0 0 0 / 70%), 0 6px 30px 0 rgb(0 0 0 / 19%);
-    transition: all 0.3s ease 0s;
-    animation: pulse 2s infinite;
+  max-width: 50%;
+  border-radius: 10%;
+  box-shadow: 0px 1px 10px 0 rgb(0 0 0 / 70%), 0 6px 30px 0 rgb(0 0 0 / 19%);
+  transition: all 0.3s ease 0s;
+}
+
+.splashPage > img:hover {
+  animation: pulse 2s infinite;
 }
 
 .splashPage a {
-    font-size: 100px;
-    color: var(--white);
-    background: none;
-    font-weight: 500;
-    cursor: text;
-    transition: color 0.3s ease 0s;
+  font-size: 100px;
+  color: var(--white);
+  background: none;
+  font-weight: 500;
+  cursor: text;
+  transition: color 0.3s ease 0s;
 }
 
 .splashPage a:hover {
-    color: var(--color3);
+  color: var(--color3);
 }
 
 /* --Main-- */
 .wrapper {
-    height: auto;
+  height: auto;
+}
+
+/* --Games-- */
+.curved-div {
+  position: relative;
+  background: var(--color3);
+  color: var(--grey);
+  text-align: center;
+  overflow: hidden;
+}
+
+.curved-div svg {
+  display: block;
+}
+
+.curved-div.upper {
+  background: #fff;
+}
+
+.curved-div h1 {
+  font-size: 6rem;
+  margin-top: 0rem;
+}
+
+.curved-div p {
+  font-size: 1rem;
+  margin: 0 5rem 0rem 5rem;
 }
 
 /* --Responsive-- */
 /* Nav Bar */
 @media only screen and (max-width: 800px) {
-    .nav__links {
-        display: none;
-    }
+  .nav__links {
+    display: none;
+  }
 
-    .menu {
-        display: initial;
-    }
+  .menu {
+    display: initial;
+  }
 }
 
 @media screen and (max-height: 450px) {
-    .overlay a {
-        font-size: 20px;
-    }
+  .overlay a {
+    font-size: 20px;
+  }
 
-    .overlay .close {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
+  .overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
 }

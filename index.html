@@ -1,62 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dhruv Rayat | Home</title>
-    <link rel="stylesheet" href="CSS/index.css">
-    <script src="https://kit.fontawesome.com/866b8b01f2.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="CSS/index.css" />
+    <script
+      src="https://kit.fontawesome.com/866b8b01f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <!--Nav Bar-->
     <header>
-        <a class="logo" href="/"><img class="iconimg" src="Images/Profile-Picture.png" alt="logo"></a>
-        <nav>
-            <ul class="nav__links">
-                <li><a href="#Games">Games</a></li>
-                <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn">Code<i class="fas fa-angle-up"></i></button>
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href="#">Python</a>
-                        <a href="#">C#</a>
-                        <a href="#">HTML</a>
-                    </div>
-                </div>
-                <li><a href="#">About</a></li>
-                <li class="social__links social__links1"><a href="#"><i class="fab fa-github"></i></a></li>
-                <li class="social__links"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li class="social__links "><a href="#"><i class="fab fa-instagram"></i></a></li>
-            </ul>
-        </nav>
-        <p class="menu cta">Menu</p>
+      <a class="logo" href="/"
+        ><img class="iconimg" src="Images/Profile-Picture.png" alt="logo"
+      /></a>
+      <nav>
+        <ul class="nav__links">
+          <li><a href="#Games">Games</a></li>
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">
+              Code<i class="fas fa-angle-up"></i>
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">Python</a>
+              <a href="#">C#</a>
+              <a href="#">HTML</a>
+            </div>
+          </div>
+          <li><a href="#">About</a></li>
+          <li class="social__links social__links1">
+            <a href="#"><i class="fab fa-github"></i></a>
+          </li>
+          <li class="social__links">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li class="social__links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <p class="menu cta">Menu</p>
     </header>
 
     <!--Mobile Nav Bar-->
     <div id="mobile__menu" class="overlay">
-        <a class="close">&times;</a>
-        <div class="overlay__content">
-            <a href="#">Services</a>
-            <a href="#">Projects</a>
-            <a href="#">About</a>
-        </div>
+      <a class="close">&times;</a>
+      <div class="overlay__content">
+        <a href="#">Services</a>
+        <a href="#">Projects</a>
+        <a href="#">About</a>
+      </div>
     </div>
 
     <!--Header-->
     <div class="splashPage">
-        <a>Dhruv Rayat</a>
-        <img src="Images/Me-Image.jpg" alt="">
+      <a>Dhruv Rayat</a>
+      <img src="Images/Me-Image.jpg" alt="" />
     </div>
 
     <!--Main-->
     <main class="wrapper">
-        <!--Games-->
-        <div id="Games">
-            <h2>Games</h2>
-        </div>
+      <!--Games-->
+      <div class="curved-div upper">
+        <svg viewBox="0 0 1440 319">
+          <path
+            fill="#7f5539"
+            fill-opacity="1"
+            d="M0,32L48,80C96,128,192,224,288,224C384,224,480,128,576,90.7C672,53,768,75,864,96C960,117,1056,139,1152,149.3C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+      <div class="curved-div">
+        <h1>Games</h1>
+        <p>
+          Scroll below to see all the Games I've made, and where to download
+          them
+        </p>
+        <svg viewBox="0 0 1440 319">
+          <path
+            fill="#fff"
+            fill-opacity="1"
+            d="M0,32L48,80C96,128,192,224,288,224C384,224,480,128,576,90.7C672,53,768,75,864,96C960,117,1056,139,1152,149.3C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
     </main>
 
     <!--Scripts-->
     <script type="text/javascript" src="JS/mobile.js"></script>
-</body>
+  </body>
 </html>
