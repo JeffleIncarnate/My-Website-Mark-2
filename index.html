@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dhruv Rayat | Home</title>
+    <link rel="icon" href="Images/Miscellaneous/Profile-Picture.png" />
     <link rel="stylesheet" href="CSS/index.css" />
     <script
       src="https://kit.fontawesome.com/866b8b01f2.js"
@@ -15,11 +16,14 @@
     <!--Nav Bar-->
     <header>
       <a class="logo" href="/"
-        ><img class="iconimg" src="Images/Profile-Picture.png" alt="logo"
+        ><img
+          class="iconimg"
+          src="Images/Miscellaneous/Profile-Picture.png"
+          alt="logo"
       /></a>
       <nav>
         <ul class="nav__links">
-          <li><a href="#Games">Games</a></li>
+          <li><a href="#games">Games</a></li>
           <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn">
               Code<i class="fas fa-angle-up"></i>
@@ -58,34 +62,68 @@
     <!--Header-->
     <div class="splashPage">
       <a>Dhruv Rayat</a>
-      <img src="Images/Me-Image.jpg" alt="" />
+      <img src="Images/Miscellaneous/Me-Image.jpg" alt="" />
     </div>
 
     <!--Main-->
     <main class="wrapper">
       <!--Games-->
-      <div class="curved-div upper">
-        <svg viewBox="0 0 1440 319">
-          <path
-            fill="#7f5539"
-            fill-opacity="1"
-            d="M0,32L48,80C96,128,192,224,288,224C384,224,480,128,576,90.7C672,53,768,75,864,96C960,117,1056,139,1152,149.3C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-          ></path>
-        </svg>
-      </div>
-      <div class="curved-div">
-        <h1>Games</h1>
-        <p>
-          Scroll below to see all the Games I've made, and where to download
-          them
-        </p>
-        <svg viewBox="0 0 1440 319">
-          <path
-            fill="#fff"
-            fill-opacity="1"
-            d="M0,32L48,80C96,128,192,224,288,224C384,224,480,128,576,90.7C672,53,768,75,864,96C960,117,1056,139,1152,149.3C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-          ></path>
-        </svg>
+      <div id="games">
+        <div class="curved-div upper">
+          <svg viewBox="0 0 1440 319">
+            <path
+              fill="#7f5539"
+              fill-opacity="1"
+              d="M0,32L48,80C96,128,192,224,288,224C384,224,480,128,576,90.7C672,53,768,75,864,96C960,117,1056,139,1152,149.3C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+            ></path>
+          </svg>
+        </div>
+        <div class="curved-div">
+          <a>Games</a>
+          <p>
+            Here are some of the Gamnes I've made within the last year; below
+            the Pictures there are Links to the download Button, If you would
+            like to test out the game or you would like to download them, you
+            can just click the Images below!
+          </p>
+          <svg viewBox="0 0 1440 319">
+            <path
+              fill="#edf0f1"
+              fill-opacity="1"
+              d="M0,32L48,80C96,128,192,224,288,224C384,224,480,128,576,90.7C672,53,768,75,864,96C960,117,1056,139,1152,149.3C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+            ></path>
+          </svg>
+        </div>
+
+        <div class="gamesFlex">
+          <div class="pogformer">
+            <a class="title">Pogformer</a><br />
+            <a class="smalltext">
+              This is one of my First ever games I've ever made, it's basiclly a
+              small Indie Game where you complete levels, and defeat Enimies!
+              Except the catch is, it gets Harder, there are 3 types of Enimes
+              and they get harder the father you get!
+            </a>
+            <img src="Images/Game_Pictures/Pogformer.png" />
+          </div>
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill="#7F5539"
+              d="M35.7,-58.3C47.3,-55.1,58.4,-47.6,62.4,-37.2C66.4,-26.7,63.3,-13.4,63.5,0.1C63.7,13.6,67.3,27.2,65.4,41.5C63.6,55.7,56.5,70.6,44.7,75.1C32.9,79.5,16.4,73.6,0.4,72.9C-15.7,72.3,-31.4,76.9,-40.6,71C-49.9,65.1,-52.7,48.6,-55.4,35C-58.1,21.4,-60.7,10.7,-65.7,-2.9C-70.7,-16.4,-78.1,-32.9,-73.7,-43.6C-69.4,-54.4,-53.3,-59.4,-39.1,-61C-24.8,-62.6,-12.4,-60.8,-0.2,-60.6C12.1,-60.3,24.1,-61.5,35.7,-58.3Z"
+              transform="translate(100 100)"
+            />
+          </svg>
+          <div class="timecore">
+            <a class="title">Timecore</a><br />
+            <a class="smalltext">
+              This is also one of the First ever games I've made, it's kinda
+              like Pogformer as in there are differnt Levels, but is this Game
+              you have to parcour over differnt blocks, but you can control
+              Time(The 4th Dimension) making it easier, or harder
+            </a>
+            <img src="Images/Game_Pictures/4D Physics Game.png" />
+          </div>
+        </div>
       </div>
     </main>
 

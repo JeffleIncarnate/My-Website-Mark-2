@@ -7,6 +7,8 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--white);
   height: 100%;
+  color: var(--grey);
+  scroll-behavior: smooth;
 }
 
 * {
@@ -47,7 +49,7 @@ header {
 }
 
 .social__links1 {
-  margin-left: 50px;
+  margin-left: 300px;
 }
 
 .nav__links {
@@ -198,9 +200,8 @@ header {
 
 /* --Splash Page-- */
 .splashPage {
-  height: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
-    url("../Images/samuel-ferrara-1527pjeb6jg-unsplash.jpg");
+    url("../Images/Background_Images/samuel-ferrara-1527pjeb6jg-unsplash.jpg");
   height: 84vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -209,7 +210,7 @@ header {
   align-items: center;
   justify-content: space-evenly;
   border-radius: 20px;
-  margin: 1%;
+  margin: 1% 1% 2% 1%;
   box-shadow: 0px 1px 10px 0 rgb(0 0 0 / 70%), 0 6px 30px 0 rgb(0 0 0 / 19%);
 }
 
@@ -242,7 +243,7 @@ header {
 }
 
 .splashPage a {
-  font-size: 100px;
+  font-size: 7rem;
   color: var(--white);
   background: none;
   font-weight: 500;
@@ -263,7 +264,6 @@ header {
 .curved-div {
   position: relative;
   background: var(--color3);
-  color: var(--grey);
   text-align: center;
   overflow: hidden;
 }
@@ -273,17 +273,73 @@ header {
 }
 
 .curved-div.upper {
-  background: #fff;
+  background: var(--white);
 }
 
-.curved-div h1 {
-  font-size: 6rem;
-  margin-top: 0rem;
+.curved-div a {
+  position: relative;
+  margin-bottom: 5%;
+  font-weight: 500;
+  font-size: 7rem;
+  transition: all 0.3s ease 0s;
+}
+
+.curved-div a:hover {
+  color: var(--white);
 }
 
 .curved-div p {
+  font-size: 1.5rem;
+  margin: 0 15% 0rem 15%;
+}
+
+/* Games */
+.gamesFlex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.gamesFlex > svg {
+  max-width: 30%;
+  margin-top: 4%;
+}
+
+.pogformer,
+.timecore {
+  text-align: center;
+  margin: 1%;
+}
+
+.pogformer .title,
+.timecore .title {
+  font-weight: 500;
+  font-size: 7rem;
+  transition: all 0.3s ease 0s;
+}
+
+.pogformer .title:hover,
+.timecore .title:hover {
+  color: var(--color3);
+}
+
+.pogformer .smalltext,
+.timecore .smalltext {
   font-size: 1rem;
-  margin: 0 5rem 0rem 5rem;
+  transition: all 0.3s ease 0s;
+}
+
+.pogformer .smalltext:hover,
+.timecore .smalltext:hover {
+  color: var(--color2);
+}
+
+.pogformer img,
+.timecore img {
+  max-width: 90%;
+  margin-top: 1%;
+  border-radius: 25px;
+  box-shadow: 0px 1px 10px 0 rgb(0 0 0 / 70%), 0 6px 30px 0 rgb(0 0 0 / 19%);
 }
 
 /* --Responsive-- */
