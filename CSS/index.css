@@ -35,26 +35,12 @@ header {
 }
 
 .logo {
-  margin-right: auto;
+  cursor: pointer;
 }
 
 .iconimg {
   max-width: 50px;
-  border-radius: 5px;
-}
-
-.social__links {
-  font-size: 25px;
-  display: flex;
-}
-
-.social__links1 {
-  margin-left: 300px;
-}
-
-.nav__links {
-  list-style: none;
-  display: flex;
+  border-radius: 2px;
 }
 
 .nav__links a,
@@ -65,12 +51,17 @@ header {
   text-decoration: none;
 }
 
+.nav__links {
+  list-style: none;
+  display: flex;
+}
+
 .nav__links li {
   padding: 0px 20px;
 }
 
 .nav__links li a {
-  transition: all 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
 }
 
 .nav__links li a:hover {
@@ -85,6 +76,7 @@ header {
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
+  font-size: 1.5rem;
 }
 
 .cta:hover {
@@ -294,48 +286,80 @@ header {
 }
 
 /* Games */
-.gamesFlex {
+.thingsFlex {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.gamesFlex > svg {
+.thingsFlex > svg {
   max-width: 30%;
   margin-top: 4%;
 }
 
-.pogformer,
-.timecore {
+.left,
+.right {
   text-align: center;
   margin: 1%;
 }
 
-.pogformer .title,
-.timecore .title {
+.left .title,
+.right .title {
   font-weight: 500;
   font-size: 7rem;
   transition: all 0.3s ease 0s;
 }
 
-.pogformer .title:hover,
-.timecore .title:hover {
+.left .title:hover,
+.right .title:hover {
   color: var(--color3);
 }
 
-.pogformer .smalltext,
-.timecore .smalltext {
+.left .smalltext,
+.right .smalltext {
   font-size: 1rem;
   transition: all 0.3s ease 0s;
 }
 
-.pogformer .smalltext:hover,
-.timecore .smalltext:hover {
+.left .smalltext:hover,
+.right .smalltext:hover {
   color: var(--color2);
 }
 
-.pogformer img,
-.timecore img {
+.left img,
+.right img {
+  max-width: 90%;
+  margin-top: 1%;
+  border-radius: 25px;
+  box-shadow: 0px 1px 10px 0 rgb(0 0 0 / 70%), 0 6px 30px 0 rgb(0 0 0 / 19%);
+}
+
+/* --Center-- */
+.center {
+  text-align: center;
+  margin: 1%;
+}
+
+.center .title {
+  font-weight: 500;
+  font-size: 7rem;
+  transition: all 0.3s ease 0s;
+}
+
+.center .title:hover {
+  color: var(--color3);
+}
+
+.center .smalltext {
+  font-size: 1rem;
+  transition: all 0.3s ease 0s;
+}
+
+.center .smalltext:hover {
+  color: var(--color2);
+}
+
+.center img {
   max-width: 90%;
   margin-top: 1%;
   border-radius: 25px;
@@ -346,6 +370,10 @@ header {
 /* Nav Bar */
 @media only screen and (max-width: 800px) {
   .nav__links {
+    display: none;
+  }
+
+  .social__links {
     display: none;
   }
 
