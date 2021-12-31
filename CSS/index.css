@@ -207,7 +207,7 @@ header {
   background-size: cover;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   border-radius: 20px;
   margin: 1% 1% 2% 1%;
   box-shadow: 0px 1px 10px 0 rgb(0 0 0 / 70%), 0 6px 30px 0 rgb(0 0 0 / 19%);
@@ -233,6 +233,7 @@ header {
 .splashPage > img {
   max-width: 50%;
   border-radius: 10%;
+  margin: 1%;
   box-shadow: 0px 1px 10px 0 rgb(0 0 0 / 70%), 0 6px 30px 0 rgb(0 0 0 / 19%);
   transition: all 0.3s ease 0s;
 }
@@ -295,7 +296,7 @@ header {
 /* Games */
 .thingsFlex {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -307,7 +308,7 @@ header {
 .left,
 .right {
   text-align: center;
-  margin: 1%;
+  margin: 2%;
 }
 
 .rightAbout {
@@ -318,7 +319,7 @@ header {
 .left .title,
 .right .title {
   font-weight: 500;
-  font-size: 6rem;
+  font-size: 5rem;
   transition: all 0.3s ease 0s;
 }
 
@@ -327,20 +328,9 @@ header {
   color: var(--color3);
 }
 
-.left .smalltext,
-.right .smalltext {
-  font-size: 1rem;
-  transition: all 0.3s ease 0s;
-}
-
-.left .smalltext:hover,
-.right .smalltext:hover {
-  color: var(--color2);
-}
-
 .left img,
 .right img {
-  max-width: 90%;
+  max-width: 35vw;
   margin-top: 30px;
   border-radius: 25px;
   box-shadow: 0px 1px 10px 0 rgb(0 0 0 / 70%), 0 6px 30px 0 rgb(0 0 0 / 19%);
@@ -360,7 +350,7 @@ header {
 
 .center .title {
   font-weight: 500;
-  font-size: 7rem;
+  font-size: 5rem;
   transition: all 0.3s ease 0s;
 }
 
@@ -378,7 +368,7 @@ header {
 }
 
 .center img {
-  max-width: 90%;
+  max-width: 35vw;
   margin-top: 30px;
   border-radius: 25px;
   box-shadow: 0px 1px 10px 0 rgb(0 0 0 / 70%), 0 6px 30px 0 rgb(0 0 0 / 19%);
@@ -447,8 +437,8 @@ figure.snip1104 {
   position: relative;
   overflow: hidden;
   margin: 10px;
-  min-width: 440px;
-  max-width: 530px;
+  min-width: 30vw;
+  max-width: 30vw;
   max-height: 390px;
   width: 100%;
   color: var(--white);
@@ -632,6 +622,84 @@ figure.snip1104.hover:before {
 }
 
 /* --Responsive-- */
+@media only screen and (max-width: 1388px) {
+  .splashPage a {
+    font-size: 5.5rem;
+  }
+
+  .splashPage img {
+    margin-right: 2%;
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  .splashPage a {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .splashPage {
+    flex-direction: column-reverse;
+  }
+
+  .splashPage img {
+    margin-right: 0%;
+  }
+
+  .thingsFlex {
+    flex-direction: column;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  .thingsFlex > svg {
+    max-width: 50%;
+    margin-top: 4%;
+  }
+
+  .left img,
+  .right img,
+  .center img {
+    max-width: 90vw;
+  }
+
+  .left .title,
+  .right .title,
+  .center .title {
+    font-size: 3.3rem;
+  }
+
+  .left,
+  .right,
+  .center {
+    width: 90%;
+  }
+
+  .curved-div a {
+    font-size: 5rem;
+  }
+
+  figure.snip1104 {
+    min-width: 90vw;
+    max-width: 90vw;
+    max-height: 440px;
+  }
+
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 598px) {
+}
+
+@media only screen and (max-width: 800px) {
+  .splashPage img {
+    max-width: 90%;
+  }
+}
+
 /* Nav Bar */
 @media only screen and (max-width: 800px) {
   .nav__links {
@@ -656,5 +724,19 @@ figure.snip1104.hover:before {
     font-size: 40px;
     top: 15px;
     right: 35px;
+  }
+}
+
+/* -- Footer Responsive -- */
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
   }
 }
