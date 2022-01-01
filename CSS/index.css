@@ -212,6 +212,11 @@ body {
   background: none;
   width: 100%;
   outline: none;
+  transition: all 0.3s ease 0s;
+}
+
+.dropdown-btn:hover {
+  color: var(--color3);
 }
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
@@ -222,11 +227,6 @@ body {
 
 .dropdown-container a {
   font-size: 1.5rem;
-}
-
-/* Optional: Style the caret down icon */
-.fa-angle-up {
-  transform: rotate(180deg);
 }
 
 /* --Splash Page-- */
