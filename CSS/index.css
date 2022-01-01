@@ -85,6 +85,10 @@ body {
   font-size: 1.5rem;
 }
 
+.menu {
+  font-size: 1rem;
+}
+
 .cta:hover {
   background-color: rgba(127, 85, 57, 0.8);
 }
@@ -112,7 +116,7 @@ body {
 .dropbtn:hover {
   color: var(--color3);
 }
-/* The container <div> - needed to position the dropdown content */
+
 .dropdown {
   position: relative;
   display: inline-block;
