@@ -200,6 +200,35 @@ body {
   color: var(--white);
 }
 
+/* Style the sidenav links and the dropdown button */
+.dropdown-btn {
+  display: flex;
+  text-decoration: none;
+  padding: 15px;
+  font-size: 36px;
+  color: var(--white);
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  outline: none;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  font-size: 1.5rem;
+}
+
+.dropdown-container a {
+  font-size: 1.5rem;
+}
+
+/* Optional: Style the caret down icon */
+.fa-angle-up {
+  transform: rotate(180deg);
+}
+
 /* --Splash Page-- */
 .splashPage {
   background-image: url("../Images/Miscellaneous/stacked-waves-haikei.svg");
@@ -693,7 +722,10 @@ figure.snip1104.hover:before {
   }
 }
 
-@media only screen and (max-width: 598px) {
+@media only screen and (max-height: 649px) {
+  .splashPage {
+    height: 700px;
+  }
 }
 
 @media only screen and (max-width: 800px) {

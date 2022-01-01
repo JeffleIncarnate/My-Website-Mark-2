@@ -47,9 +47,18 @@
     <div id="mobile__menu" class="overlay">
       <a class="close">&times;</a>
       <div class="overlay__content">
-        <a href="#">Services</a>
-        <a href="#">Projects</a>
-        <a href="#">About</a>
+        <a href="#games">Games</a>
+        <button class="dropdown-btn">
+          Code
+          <i class="fas fa-angle-up"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="#python">Python</a>
+          <a href="#c-sharp">C#</a>
+          <a href="#html">HTML</a>
+        </div>
+        <a href="#about">About</a>
+        <a href="#footer">Contact</a>
       </div>
     </div>
 
@@ -441,7 +450,7 @@
     </main>
 
     <!--Footer-->
-    <footer class="footer" data-aos="fade">
+    <footer id="footer" class="footer" data-aos="fade">
       <div class="containerFooter">
         <div class="row">
           <div class="footer-col">
@@ -481,5 +490,6 @@
     <!--Scripts-->
     <script type="text/javascript" src="JS/navbar_hide.js"></script>
     <script type="text/javascript" src="JS/mobile.js"></script>
+    <script type="text/javascript" src="JS/drop_down.js"></script>
   </body>
 </html>
